@@ -8,6 +8,10 @@
     font-family: Arial, sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     line-height: 1.6;
     color: #333;
@@ -41,7 +45,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000000e6;
     padding: 1rem 2rem;
     z-index: 1000;
     display: flex;
@@ -114,11 +118,11 @@ nav .logo {
 }
 
 .menu-toggle.active .hamburger::before {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 7px);
 }
 
 .menu-toggle.active .hamburger::after {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -6px);
 }
 
 /* ==========================================================================
@@ -625,7 +629,7 @@ footer.visible {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     /* Navbar */
     nav .logo {

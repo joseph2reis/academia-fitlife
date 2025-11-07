@@ -8,7 +8,8 @@
     font-family: Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -456,6 +457,46 @@ header {
 }
 
 /* ==========================================================================
+   Botão whatsapp
+   ========================================================================== */
+.btn-whatsapp-pulse {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #888;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 25px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.btn-whatsapp-pulse .fa {
+    margin-top: 15px;
+}
+
+
+/* ==========================================================================
    Rodapé
    ========================================================================== */
 footer {
@@ -630,6 +671,14 @@ footer.visible {
 }
 
 @media (max-width: 500px) {
+
+    /* botão whatsapp */
+    .btn-whatsapp-pulse {
+        bottom: 20px;
+        right: 10px;
+        width: 60px;
+        height: 60px;
+    }
 
     /* Navbar */
     nav .logo {
